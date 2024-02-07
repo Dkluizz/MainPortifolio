@@ -15,7 +15,7 @@ function updateActiveSection() {
     const scrollY = window.scrollY;
     sections.forEach(sec => {
         const offset = sec.offsetTop;
-        const heightSection = sec.offsetHeight -112;
+        const heightSection = sec.offsetHeight;
         const idSection = sec.getAttribute('id');
         if (scrollY >= offset && scrollY < offset + heightSection) {
             setActiveNavLink(idSection);
