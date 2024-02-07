@@ -16,12 +16,12 @@ window.addEventListener('scroll',()=>{
         let heightSection = sec.offsetHeight-120;
         let idSection = sec.getAttribute('id');
 
-        if(top >= offset && top < offset +heightSection){
+        if(top >= offset && top < offset + heightSection){
             navLink.forEach(link => {
                 link.classList.remove('active')
-                console.log(idSection)
                 document.querySelector(`header nav a[href*=${idSection}]`).classList.add('active')
             })
         }
     })
 })
+
